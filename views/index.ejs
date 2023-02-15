@@ -1,0 +1,50 @@
+<%- include('./partials/head') %>
+
+<article>
+  <div class="profile-card">
+    <img
+      src="IMG_1665kopiëren.jpg"
+      alt="Avatar Image"
+      class="profile-card__avatar"
+    />
+    <div class="profile-card__bio">
+      <h1 class="profile-card__bio-name">
+        <%= member.name %> <%= member.surname %>
+      </h1>
+      <h2 class="profile-card__bio-title">Frontend Developer& Designer</h2>
+      <p><%= member.bio.html%></p>
+    </div>
+    <div class="profile-card__links">
+      <a
+        href="https://github.com/ArexanK"
+        class="profile-card__links-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+      <a
+        href="https://twitter.com/Arex_dev"
+        class="profile-card__links-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Twitter</a
+      >
+      <a
+        href=""
+        class="profile-card__links-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+      <a
+        href=""
+        class="profile-card__links-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Figma</a
+      >
+    </div>
+  </div>
+</article>
+
+<%- include('./partials/foot') %>
