@@ -117,12 +117,6 @@ article img {
 }
 
 article a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 2rem;
   display: block;
 }
 
@@ -132,4 +126,99 @@ article a:hover {
 
 article a span {
   display: none;
+}
+
+
+/* profile card */
+.profile-card {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  background: #fff;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  margin-left: 30rem;
+  margin-top: 10rem;
+}
+
+.profile-card::before,
+.profile-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  z-index: -1;
+  transition: transform 200ms ease-out;
+}
+
+.profile-card:hover::before {
+  transform: rotate(-3deg) scale(1.02) translate(-1%);
+}
+
+.profile-card:hover::after {
+  transform: rotate(-6deg) scale(1.02) translate(-1%);
+  z-index: -2;
+  transition-delay: 100ms;
+}
+
+.profile-card__avatar {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 2px solid #000;
+  object-fit: cover;
+  box-shadow: 0 2px 0 #000;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  border-radius: 1rem;
+}
+
+.profile-card__bio {
+  background: #cecdcd;
+  padding: 1rem;
+  border-bottom: 2px dashed #000;
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  color: rgb(0, 0, 0)
+}
+
+.profile-card__bio-name {
+  font-size: 1.25em;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0)
+}
+
+.profile-card__bio-title {
+  font-size: 0.875em;
+  font-weight: 600;
+  color: rgb(0, 0, 0)
+}
+
+.profile-card__links {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-card__links-button {
+  padding: 1rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  color: #000;
+  transition: box-shadow 200ms ease;
+  text-decoration: none;
+}
+
+.profile-card__links-button:hover {
+  box-shadow: -3px 3px 0 #000;
 }

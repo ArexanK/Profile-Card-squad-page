@@ -24,6 +24,27 @@ app.get('/', (request, response) => {
   })
 })
 
+// Maak een route voor de members
+app.get('/members', (request, response) => {
+
+  let id = request.query.member || 'cldemsxee3oeg0avw60bcsibn'
+  let memberUrl = 'https://whois.fdnd.nl/api/v1/member?id=' + id
+
+  fetchJson(memberUrl).then((data) => {
+    // console.log(data)
+    if (!data.member.gitHubHandle.startsWith('https://www.github.com/')) {
+      data.member.gitHubHandle = 'https://www.github.com/' + data.member.gitHubHandle;
+    }
+    response.render('member', data)
+  })
+})
+
+// Maak een route voor de members
+app.get('/about', (request, response) => {
+  response.render('about')
+})
+
+
 // app.get('/members', (request, response) => {
 //   response.send('Joepie!!')
 // })

@@ -15,7 +15,6 @@
     <img class="logo" src="/9919.png" />
 
     <a href="/?squad=squad-a-2022">Squad A</a>
-
     <a href="/?squad=squad-b-2022">Squad B</a>
     <a href="/?squad=squat-c-2022">Squad C</a>
     <hr />
@@ -31,13 +30,18 @@
 
     <% squad.members.forEach(member => { %>
     <article>
-      <% if (member.avatar) { %>
-      <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
-      <% }else{ %>
-      <img src="/placeholder.jpg" alt="Placeholder avatar" />
-      <% } %>
+      <a href="/members?member=<%= member.id %>">
+        <% if (member.avatar) { %>
+        <img
+          src="<%= member.avatar %>"
+          alt="De avatar van <%= member.name %>"
+        />
+        <% }else{ %>
+        <img src="/placeholder.jpg" alt="Placeholder avatar" />
+        <% } %>
 
-      <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+        <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+      </a>
     </article>
     <% }) %>
   </section>
