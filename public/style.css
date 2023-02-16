@@ -1,99 +1,135 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-  background: #fefce8;
-  font-family: 'Inter var', sans-serif;
-  font-feature-settings: 'cv11';
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
+
+  background: rgb(13, 17, 23);
+  /* background-image: rgba(34, 34, 34, 0.333); */
+
+  background-size: 200% 200%;
+  animation: movement 30s ease infinite alternate-reverse;
 }
 
-.profile-card {
+nav {
   position: relative;
-  border: 2px solid #000;
-  border-radius: 1rem;
-  background: #fff;
-  width: 300px;
-}
-
-.profile-card::before,
-.profile-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: #fff;
-  border: 2px solid #000;
-  border-radius: 1rem;
-  z-index: -1;
-  transition: transform 200ms ease-out;
-}
-
-.profile-card:hover::before {
-  transform: rotate(-3deg) scale(1.02) translate(-1%);
-}
-
-.profile-card:hover::after {
-  transform: rotate(-6deg) scale(1.02) translate(-1%);
-  z-index: -2;
-  transition-delay: 100ms;
-}
-
-.profile-card__avatar {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  border: 2px solid #000;
-  object-fit: cover;
-  box-shadow: 0 2px 0 #000;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -80%);
-  border-radius: 1rem;
-}
-
-.profile-card__bio {
-  background: #fef9c3;
-  padding: 1rem;
-  border-bottom: 2px dashed #000;
-  text-align: center;
-  border-radius: 1rem 1rem 0 0;
-  overflow: hidden;
-}
-
-.profile-card__bio-name {
-  font-size: 1.25em;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-}
-
-.profile-card__bio-title {
-  font-size: 0.875em;
-  font-weight: 600;
-}
-
-.profile-card__links {
-  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.profile-card__links-button {
-  padding: 1rem;
-  display: inline-block;
   width: 100%;
-  text-align: center;
-  border: 2px solid #000;
-  border-radius: 0.5rem;
-  color: #000;
-  transition: box-shadow 200ms ease;
-  text-decoration: none;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
 }
 
-.profile-card__links-button:hover {
-  box-shadow: -3px 3px 0 #000;
+nav,
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+
+}
+
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.contributions {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes movement {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  25% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  margin-top: 30em;
+
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  /* display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; */
+
+
+  margin-bottom: 2rem;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+article {
+  position: relative;
+  width: 43%;
+  height: auto;
+  padding: 1rem;
+  color: rgb(197, 197, 197);
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(20, 20, 20, 0.27);
+}
+
+article h2 {
+  font-size: 1rem;
+  font-weight: normal;
+
+}
+
+article img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+article a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2rem;
+  display: block;
+}
+
+article a:hover {
+  background: #fff2;
+}
+
+article a span {
+  display: none;
 }
