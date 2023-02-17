@@ -13,16 +13,20 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', (request, response) => {
-  console.log(request.query.squad)
+  console.log(request.query.squad);
 
-  let slug = request.query.squad || 'squad-a-2022'
-  let orderBy = request.query.orderBy || 'name'
-  let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC'
+  let slug = request.query.squad || 'squad-a-2022';
+  let orderBy = request.query.orderBy || 'name';
+  let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC';
 
   fetchJson(squadUrl).then((data) => {
     response.render('index', data)
-  })
+  });
 })
+
+
+
+
 
 // Maak een route voor de members
 app.get('/members', (request, response) => {
