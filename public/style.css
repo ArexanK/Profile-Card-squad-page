@@ -1,20 +1,3 @@
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  font-family: Helvetica, Arial, sans-serif;
-
-  background: rgb(13, 17, 23);
-  /* background-image: rgba(34, 34, 34, 0.333); */
-/*
-  background-size: 200% 200%;
-  animation: movement 30s ease infinite alternate-reverse;
-} */
-
 *,
 *:before,
 *:after {
@@ -175,6 +158,46 @@ article a span {
   display: none;
 }
 
+form {
+  width: 300px;
+
+}
+
+input[type=text] {
+  outline: 0;
+  border: none;
+  height: 40px;
+  width: 100px;
+  background: #dadada;
+  color: black;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 20px;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+
+input[type=text]:focus {
+  background: #dad8d8;
+  color: #3b3b3b;
+}
+
+input[type=submit] {
+  border: none;
+  outline: 0;
+  font-size: 20px;
+  width: 70px;
+  height: 40px;
+  border-radius: 0px 10px 10px 0px;
+  background: #1f1f1f;
+  color: #F0EEED;
+  transition-duration: 0.2s;
+}
+
+input[type=submit]:hover {
+  color: rgb(197, 197, 197);
+  cursor: pointer;
+  background: #1f1f1f;
+}
 
 /* profile card */
 .profile-card {
@@ -184,9 +207,9 @@ article a span {
   background: #fff;
   width: 300px;
   margin: 0 auto;
-  margin-bottom: 10rem;
-  margin-left: 30rem;
-  margin-top: 10rem;
+  margin-bottom: 5rem;
+  margin-left: 15rem;
+  margin-top: 5rem;
 }
 
 .profile-card::before,
@@ -276,18 +299,9 @@ article a span {
 
 
 
-/*achterground space*/
+/*achterground space  inspo codepen Malik Dellidj*/
 
-/* *, *:before, *:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} */
-/* 
-html, body {
-  height: 100%;
-  width: 100%;
-} */
+
 
 body {
   font: normal 1em/1.45em "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -308,11 +322,6 @@ hr {
   opacity: 0.1;
 }
 
-/* code {
-  color: #ae94c0;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 0.9em;
-} */
 
 .solar-syst {
   margin: 0 auto;

@@ -3,18 +3,17 @@
 <header>
   <nav>
     <img class="logo" src="/9919.png" />
+    <form>
+      <input type="text" />
+      <input type="submit" valeu="zoeken!" />
+    </form>
+
+    <div id="achtergrond"></div>
 
     <a href="/?squad=squad-a-2022">Squad A</a>
     <a href="/?squad=squad-b-2022">Squad B</a>
     <a href="/?squad=squat-c-2022">Squad C</a>
   </nav>
-
-  <!-- <nav class="menu">
-    <a href="link-overview">Overview</a>
-    <a href="link-overview">Repositories</a>
-    <a href="/?squad=squat-c-2022">Projects</a>
-    <hr />
-  </nav> -->
 </header>
 <main>
   <!-- <h1><%= squad.name %></h1> -->
@@ -47,7 +46,7 @@
           alt="De avatar van <%= member.name %>"
         />
         <% }else{ %>
-        <img src="/placeholder.jpg" alt="Placeholder avatar" />
+        <img src="/astro-mona.jpeg" alt="Placeholder avatar" />
         <% } %>
 
         <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
