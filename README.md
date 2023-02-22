@@ -27,7 +27,7 @@ Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile car
 
 
 
-
+## ✅ ❌ Checklist
 
 
 
