@@ -26,11 +26,14 @@ Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile car
 - JSON 
 
 ## Installatie
-<!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
-
+- Node installatie
+- NPM installatie
 ## Gebruik
 
+
+
 ## Bronnen
+
 
 ## Licentie
 
