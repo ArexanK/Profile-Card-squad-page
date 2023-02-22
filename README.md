@@ -3,6 +3,8 @@
 # Profile Card Squad Page 
 <img width="650" alt="Screenshot 2023-02-22 at 10 52 19" src="https://user-images.githubusercontent.com/94745953/220585128-55137550-1db7-4167-a6eb-47b5a1fd7fcb.png">
 
+<img width="363" alt="Screenshot 2023-02-22 at 10 52 43" src="https://user-images.githubusercontent.com/94745953/220588443-34749d94-339c-4369-9263-61cc61e9622c.png">
+
 
 ## Inhoudsopgave
 
@@ -33,7 +35,7 @@ Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile car
 
 
 ## Bronnen
-
+https://upset-teal-cowboy-boots.cyclic.app/
 
 ## Licentie
 
