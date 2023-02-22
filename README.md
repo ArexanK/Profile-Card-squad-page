@@ -2,7 +2,7 @@
 
 # Profile Card Squad Page 
 <img width="650" alt="Screenshot 2023-02-22 at 10 52 19" src="https://user-images.githubusercontent.com/94745953/220585128-55137550-1db7-4167-a6eb-47b5a1fd7fcb.png">
-<img width="350" alt="Screenshot 2023-02-22 at 10 52 43" src="https://user-images.githubusercontent.com/94745953/220585197-1de61a1a-40e5-4233-912b-063d32c630c7.png">
+
 
 
 ## Inhoudsopgave
