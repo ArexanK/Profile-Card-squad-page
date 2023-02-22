@@ -6,7 +6,7 @@
 <img width="363" alt="Screenshot 2023-02-22 at 10 52 43" src="https://user-images.githubusercontent.com/94745953/220588443-34749d94-339c-4369-9263-61cc61e9622c.png">
 
 
-## Inhoudsopgave
+##⭐️ Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
@@ -15,10 +15,10 @@
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## Beschrijving
+## 📝Beschrijving
 Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile cards in de squads. Ik heb een github account nagemaakt met een solar system als achtergrond animatie, je hebt een sorteer functie op naam, prefix en achternaam van een student en je kan per sqaud sorteren als je op squad A,B en C, vervolgens klik je op naam en zie je een profile card met avatar, bio info en github handle die vanuit JSON file is gehaald. 
 
-## Kenmerken
+##🖇 Kenmerken
 - Node
 - EJS
 - Express
@@ -27,7 +27,7 @@ Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile car
 - CSS
 - JSON 
 
-## Installatie
+##🖥 Installatie
 - Node installatie
 - NPM installatie
 ## Gebruik
