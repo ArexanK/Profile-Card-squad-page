@@ -7,16 +7,36 @@
 
 
 ## ⭐️ Inhoudsopgave
-
-  * [Beschrijving](#beschrijving)
+  * [Opdracht](#Opdracht)
+  * [Design Challenge](#Design Challenge)
+  * [Gebruik website](#gebruik)
   * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## 📝Beschrijving
+## 📝 Opdracht
 Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile cards in de squads. Ik heb een github account nagemaakt met een solar system als achtergrond animatie, je hebt een sorteer functie op naam, prefix en achternaam van een student en je kan per sqaud sorteren als je op squad A,B en C, vervolgens klik je op naam en zie je een profile card met avatar, bio info en github handle die vanuit JSON file is gehaald. 
+
+
+## 🎨 Design Challenge
+
+
+
+
+## 👩🏽‍💻 Gebruik Website
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 🖇 Kenmerken
 - Node
