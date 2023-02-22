@@ -6,7 +6,7 @@
 <img width="363" alt="Screenshot 2023-02-22 at 10 52 43" src="https://user-images.githubusercontent.com/94745953/220588443-34749d94-339c-4369-9263-61cc61e9622c.png">
 
 
-##⭐️ Inhoudsopgave
+## ⭐️ Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
