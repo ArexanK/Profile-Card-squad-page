@@ -20,7 +20,18 @@ app.get('/', (request, response) => {
   let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC';
 
   fetchJson(squadUrl).then((data) => {
-    response.render('index', data)
+    let dataClone = structuredClone(data);
+
+    // 1) als request.query.name bestaat
+    if (request.query.name) {
+      // 2) Filter dan uit de data alle mensen die niet dat deel in hun naam hebben
+      dataClone.squad.members = dataClone.squad.members.filter(function (member) {
+        // 3 Maak dit hoofdletter ongevoelig
+        return member.name.includes(request.query.name) || member.prefix.includes(request.query.name) || member.surname.includes(request.query.name)
+      })
+    }
+
+    response.render('index', dataClone)
   });
 })
 

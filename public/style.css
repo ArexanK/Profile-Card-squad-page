@@ -186,7 +186,7 @@ input[type=submit] {
   outline: 0;
   font-size: 20px;
   width: 70px;
-  height: 40px;
+  height: 20px;
   border-radius: 0px 10px 10px 0px;
   background: #1f1f1f;
   color: #F0EEED;
@@ -299,7 +299,7 @@ input[type=submit]:hover {
 
 
 
-/*achterground space  inspo codepen Malik Dellidj*/
+/*achterground space  */
 
 
 
