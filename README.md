@@ -4,7 +4,6 @@
 <img width="650" alt="Screenshot 2023-02-22 at 10 52 19" src="https://user-images.githubusercontent.com/94745953/220585128-55137550-1db7-4167-a6eb-47b5a1fd7fcb.png">
 
 
-
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
@@ -15,12 +14,16 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile cards in de squads. Ik heb een github account nagemaakt met een solar system als achtergrond animatie, je hebt een sorteer functie op naam, prefix en achternaam van een student en je kan per sqaud sorteren als je op squad A,B en C, vervolgens klik je op naam en zie je een profile card met avatar, bio info en github handle die vanuit JSON file is gehaald. 
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+- Node
+- EJS
+- Express
+- Javascript
+- HTML template
+- CSS
+- JSON 
 
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
