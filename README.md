@@ -18,7 +18,7 @@
 ## 📝Beschrijving
 Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile cards in de squads. Ik heb een github account nagemaakt met een solar system als achtergrond animatie, je hebt een sorteer functie op naam, prefix en achternaam van een student en je kan per sqaud sorteren als je op squad A,B en C, vervolgens klik je op naam en zie je een profile card met avatar, bio info en github handle die vanuit JSON file is gehaald. 
 
-##🖇 Kenmerken
+## 🖇 Kenmerken
 - Node
 - EJS
 - Express
@@ -27,17 +27,17 @@ Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile car
 - CSS
 - JSON 
 
-##🖥 Installatie
+## 🖥 Installatie
 - Node installatie
 - NPM installatie
 ## Gebruik
 
 
 
-## Bronnen
+## 📚Bronnen
 https://upset-teal-cowboy-boots.cyclic.app/
 
-## Licentie
+## 🔎Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
