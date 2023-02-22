@@ -7,8 +7,8 @@
 
 
 ## ⭐️ Inhoudsopgave
-  * [Opdracht](#Opdracht)
-  * [Design Challenge](#Design Challenge)
+  * [Opdracht](#opdracht)
+  * [Design Challenge](#design)
   * [Gebruik website](#gebruik)
   * [Kenmerken](#kenmerken)
   * [Bronnen](#bronnen)
