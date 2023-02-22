@@ -26,7 +26,7 @@ app.get('/', (request, response) => {
     if (request.query.name) {
       // 2) Filter dan uit de data alle mensen die niet dat deel in hun naam hebben
       dataClone.squad.members = dataClone.squad.members.filter(function (member) {
-        // 3 Maak dit hoofdletter ongevoelig
+        // 3 zoek op naam + perfix+ achternaam. Hoofdletter ongevoelig maken?
         return member.name.includes(request.query.name) || member.prefix.includes(request.query.name) || member.surname.includes(request.query.name)
       })
     }

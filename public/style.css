@@ -14,7 +14,7 @@ body {
 
 body {
   font: normal 1em/1.45em "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+
   color: #fff;
   background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
   background-attachment: fixed;
@@ -29,7 +29,7 @@ nav {
   padding: 0 1rem;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(20, 19, 19);
+  background-color: rgb(0, 0, 0);
 }
 
 nav,
@@ -37,11 +37,10 @@ a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
 
-
-
-
-
+a {
+  margin: 0 auto;
 }
 
 .menu {
@@ -159,15 +158,15 @@ article a span {
 }
 
 form {
-  width: 300px;
+  width: 400px;
 
 }
 
 input[type=text] {
   outline: 0;
   border: none;
-  height: 40px;
-  width: 100px;
+  height: 30px;
+  width: 200px;
   background: #dadada;
   color: black;
   border-radius: 10px 0px 0px 10px;
@@ -177,16 +176,16 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  background: #dad8d8;
-  color: #3b3b3b;
+  background: #2e2e2e;
+  color: #b8b8b8;
 }
 
 input[type=submit] {
   border: none;
   outline: 0;
   font-size: 20px;
-  width: 70px;
-  height: 20px;
+  width: 80px;
+  height: 30px;
   border-radius: 0px 10px 10px 0px;
   background: #1f1f1f;
   color: #F0EEED;
@@ -205,11 +204,12 @@ input[type=submit]:hover {
   border: 2px solid #000;
   border-radius: 1rem;
   background: #fff;
-  width: 300px;
+
+  width: 400px;
   margin: 0 auto;
-  margin-bottom: 5rem;
-  margin-left: 15rem;
-  margin-top: 5rem;
+  margin-bottom: 10rem;
+  margin-left: 30rem;
+  margin-top: 10rem;
 }
 
 .profile-card::before,
@@ -300,8 +300,6 @@ input[type=submit]:hover {
 
 
 /*achterground space  */
-
-
 
 body {
   font: normal 1em/1.45em "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -594,4 +592,14 @@ hr {
   to {
     transform: rotate(-360deg);
   }
+}
+
+
+
+@media screen and (min-width: 600px) {
+  article {
+    width: 20%;
+  }
+
+
 }
