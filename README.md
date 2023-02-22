@@ -1,7 +1,10 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Profile Card Squad Page 
+<img width="929" alt="Screenshot 2023-02-22 at 10 43 27" src="https://user-images.githubusercontent.com/94745953/220582857-583884d4-1c5a-4e25-8765-56e941d1396a.png">
+
+<img width="694" alt="Screenshot 2023-02-22 at 10 41 35" src="https://user-images.githubusercontent.com/94745953/220582957-8397bf09-27e1-470a-8d5e-8fa8716e5ae1.png">
+
 
 ## Inhoudsopgave
 
