@@ -14,28 +14,28 @@
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## 📝 Opdracht
+
+<h3 id="#Opdracht"> 👨🏼‍💼 Opdracht</h3>
 Ik heb voor deze leertaak een squadpage gemaakt aan de hand van alle profile cards in de squads. Ik heb een github account nagemaakt met een solar system als achtergrond animatie, je hebt een sorteer functie op naam, prefix en achternaam van een student en je kan per sqaud sorteren als je op squad A,B en C, vervolgens klik je op naam en zie je een profile card met avatar, bio info en github handle die vanuit JSON file is gehaald. 
 
 
-## 🎨 Design Challenge
+<h3 id="#Designchallenge"> 🚀 Design challenge</h3>
 
 
+        
+<h3 id="#Gebruik"> 👩🏽‍💻 Gebruik website</h3>
 
+        
+        
+<h3 id="#Kenmerken"> 📱 Kenmerken</h3>
+Dit project is gemaakt met HTML, CSS en JavaScript. Verder staat hieronder een korte lijst met gebruikte tools.
 
-## 👩🏽‍💻 Gebruik Website
+<h4>Tools</h4>
+<ul>
+        <li> 🖥️ Visual Studio Code</li>
+</ul>
 
-
-
-## ✅ ❌ Checklist
-
-
-
-
-
-
-
-
+<h4>Gebruikte technieken</h4>
 
 
 ## 🖇 Kenmerken
