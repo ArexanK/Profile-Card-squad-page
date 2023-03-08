@@ -12,12 +12,12 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 // Maak een route voor de index
-app.get('/', (request, response) => {
+app.get('/', (request, response) => { // '/' route die je maakt voor een nieuw pagina
   console.log(request.query.squad);
 
-  let slug = request.query.squad || 'squad-a-2022';
-  let orderBy = request.query.orderBy || 'name';
-  let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC';
+  let slug = request.query.squad || 'squad-a-2022'; // request squad en anders default op squad a
+  let orderBy = request.query.orderBy || 'name'; // sorteer op naam functie
+  let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC'; //
 
   fetchJson(squadUrl).then((data) => {
     let dataClone = structuredClone(data);
@@ -26,8 +26,8 @@ app.get('/', (request, response) => {
     if (request.query.name) {
       // 2) Filter dan uit de data alle mensen die niet dat deel in hun naam hebben
       dataClone.squad.members = dataClone.squad.members.filter(function (member) {
-        // 3 zoek op naam + perfix+ achternaam. Hoofdletter ongevoelig maken?
-        return member.name.includes(request.query.name) || member.prefix.includes(request.query.name) || member.surname.includes(request.query.name)
+        // 3 zoekfunctie  op naam+ achternaam. (hoofdlettergevoelig in script.js geplaatst)
+        return member.name.includes(request.query.name) || member.surname.includes(request.query.name)
       })
     }
 
@@ -48,7 +48,7 @@ app.get('/members', (request, response) => {
   fetchJson(memberUrl).then((data) => {
     // console.log(data)
     if (!data.member.gitHubHandle.startsWith('https://www.github.com/')) {
-      data.member.gitHubHandle = 'https://www.github.com/' + data.member.gitHubHandle;
+      data.member.gitHubHandle = 'https://www.github.com/' + data.member.gitHubHandle; // github handle gekoppeld per member
     }
     response.render('member', data)
   })

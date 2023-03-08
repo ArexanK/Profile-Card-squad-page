@@ -159,8 +159,12 @@ article a span {
 
 form {
   width: 400px;
+  display: flex;
+  margin: 0 auto;
 
 }
+
+
 
 input[type=text] {
   outline: 0;
@@ -173,6 +177,7 @@ input[type=text] {
   font-size: 20px;
   padding: 5px;
   transition-duration: 0.5s;
+
 }
 
 input[type=text]:focus {
@@ -190,12 +195,17 @@ input[type=submit] {
   background: #1f1f1f;
   color: #F0EEED;
   transition-duration: 0.2s;
+
 }
 
 input[type=submit]:hover {
   color: rgb(197, 197, 197);
   cursor: pointer;
   background: #1f1f1f;
+}
+
+input[type=radio] {
+  margin: 0 auto;
 }
 
 /* profile card */

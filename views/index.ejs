@@ -3,24 +3,26 @@
 <header>
   <nav>
     <img class="logo" src="/9919.png" />
+
     <form method="get" action="/">
-      <input type="text" name="name" />
-      <input type="submit" valeu="zoeken!" />
+      <input type="text" class="search" name="name" />
+      <input type="submit" value="search" />
+
+      <input type="radio" id="squadpage-a" name="squad" value="squad-a-2022" />
+
+      <label for="squadpage-a">Squad A</label><br />
+
+      <input type="radio" id="squadpage-b" name="squad" value="squad-b-2022" />
+      <label for="squadpage-b">Squad B</label><br />
+
+      <input type="radio" id="squadpage-c" name="squad" value="squat-c-2022" />
+
+      <label for="squadpage-c">Squad C</label>
     </form>
-
-    <div id="achtergrond"></div>
-
-    <a href="/?squad=squad-a-2022">Squad A</a>
-    <a href="/?squad=squad-b-2022">Squad B</a>
-    <a href="/?squad=squat-c-2022">Squad C</a>
   </nav>
 </header>
+
 <main>
-  <!-- <h1><%= squad.name %></h1> -->
-
-  <!-- <a href="/?squad=<%= squad.slug %>&orderBy=name">Sorteer op naam</a> -->
-  <hr />
-
   <section>
     <div class="solar-syst">
       <div class="sun"></div>
@@ -38,18 +40,23 @@
     <!-- Hier komen de members -->
     <h3>Pinned</h3>
     <% squad.members.forEach(member => { %>
+    <!--van elk member info uit JSON file halen-->
     <article>
       <a href="/members?member=<%= member.id %>">
+        <!--met member id code alle info verzamelen-->
         <% if (member.avatar) { %>
+        <!--Avatar vanuit Json file halen-->
         <img
           src="<%= member.avatar %>"
           alt="De avatar van <%= member.name %>"
         />
         <% }else{ %>
+        <!-- geen avatar dan een placeholder avatar image gebruiken-->
         <img src="/astro-mona.jpeg" alt="Placeholder avatar" />
         <% } %>
 
         <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+        <!--member naam prefix en surname uit json file roepen-->
       </a>
     </article>
     <% }) %>
